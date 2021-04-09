@@ -1,0 +1,24 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (min-width: 768px) {
+        padding: 0;
+        width: 720px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 940px;
+    }
+}

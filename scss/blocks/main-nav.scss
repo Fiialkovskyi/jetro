@@ -1,0 +1,35 @@
+.main-nav {
+
+  .main-nav__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      .main-nav__item {
+        margin: 0;
+        padding: 0;
+
+        &:hover {
+          opacity: .5;
+        }
+
+        .main-nav__link {
+          padding: 0 15px;
+          font-family: 'Bebas Neue', cursive;
+          font-size: 30px;
+          text-decoration: none;
+          color: #b9b9b9;
+        }
+
+        .main-nav__link--active {
+          color: #e8663c;
+        }
+      }
+  }
+}
