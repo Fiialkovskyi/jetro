@@ -1,30 +1,41 @@
 .page-header {
+
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.page-header__logo {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  line-height: 5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #e8603c;
+
+  &:hover {
+    opacity: .5;
+  } 
+
+  &--light {
+    color: #f3af9d;
+  }
+}
+
+@media (min-width: 768px) {
   .page-header__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
+    flex-direction: row;
+  }
 
-    @media (min-width: 1200px) {
-      flex-direction: row;
-    }
-
-    .page-header__title {
-      margin-top: 1rem;
-      margin-bottom: 0;
-      
-      font-family: 'Bebas Neue', cursive;
-      font-size: 50px;
-      text-transform: uppercase;
-      color: #e8603c;
-  
-      @media (min-width: 1200px) {
-        font-size: 36px;
-      }
-  
-      span {
-        color: #f3af9d;
-      }
-    }
+  .page-header__logo {
+    margin-top: 1.8rem;
+    font-size: 4.6rem;
+    line-height: 4.6rem;
   }
 }
